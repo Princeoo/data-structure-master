@@ -1,25 +1,25 @@
 ## 简介
-#### 此项目是基于java语言的关于数据结构的代码实现，包含所有经典数据结构算法，并且注释完善，非常适合了解和学习数据结构。另外包含了一个联系人存储工具(phonebook)，它由swing展示，并应用了数据结构算法的相关概念。如果对你有帮助，就关注一下吧^O^ 
+#### 此项目是基于java语言的关于数据结构的代码实现，包含所有经典数据结构算法，并且注释完善，非常适合了解和学习数据结构。另外包含了一个联系人存储工具(datastructure.phonebook)，它由swing展示，并应用了数据结构算法的相关概念。如果对你有帮助，就关注一下吧^O^ 
 
 ## 结构
 
-* array--数组和广义表
+* datastructure.array--数组和广义表
 
-* graph--图
+* datastructure.graph--图
 
-* list--线性表
+* datastructure.list--线性表
 
-* phonebook--综合应用(利用数据结构实现联系人存储软件)
+* datastructure.phonebook--综合应用(利用数据结构实现联系人存储软件)
 
-* search--查找
+* datastructure.search--查找
 
-* sort--排序
+* datastructure.sort--排序
 
-* stackqueue--栈和队列
+* datastructure.stackqueue--栈和队列
 
-* string--串
+* datastructure.string--串
 
-* tree--树
+* datastructure.tree--树
 
 * leetcode_agorithm leetcode算法示例题解
 
@@ -28,7 +28,7 @@
 ### 线性表
 线性表是最基本、最简单、也是最常用的一种数据结构。线性表中数据元素之间的关系是一对一的关系，即除了第一个和最后一个数据元素之外，其它数据元素都是首尾相接的(注意，这句话只适用大部分线性表，而不是全部。比如，循环链表逻辑层次上也是一种线性表(存储层次上属于链式存储)，但是把最后一个数据元素的尾指针指向了哨位结点)。
 
-![Alt text](/res/list.png?raw=true "list")
+![Alt text](/res/list.png?raw=true "datastructure.list")
 * **SeqList** 用数组实现的一种单链表,时间复杂度如下:
   * 索引: `O(1)`
   * 搜索: `O(n)`
@@ -54,14 +54,14 @@
 栈是一种先进后出的一种元素集合，其中push为入栈，pop为出栈。
 队列是一种先进先出的一种元素集合，其中enqueue为入队，dequeue为出队
 
-![Alt text](/res/stackqueue.png?raw=true "stackqueue")
+![Alt text](/res/stackqueue.png?raw=true "datastructure.stackqueue")
 
 * **SeqQueue** 使用数组实现一种队列结构，时间复杂度如下:
   * enqueue: `O(1)`
   * dequeue: `O(1)`
 * **LinkedQueue**  使用链表实现的一种队列结构
 
-![Alt text](/res/stack_queue.png?raw=true "stackqueue")
+![Alt text](/res/stack_queue.png?raw=true "datastructure.stackqueue")
 
 * **PriorityQueue** 优先级队列，优先级高的元素最先出队
 * **SeqStack** 使用数组实现的一种栈结构
@@ -71,7 +71,7 @@
 
 ### 串
 
-串（string）是由零个或多个宇符组成的有限序列，又名叫字符串。
+串（datastructure.string）是由零个或多个宇符组成的有限序列，又名叫字符串。
 
 * **MyString** 模拟字符串结构
 * **MyStringBuffer** 模拟可变字符串结构
