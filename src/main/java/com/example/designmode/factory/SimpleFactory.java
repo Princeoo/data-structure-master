@@ -38,7 +38,7 @@ public class SimpleFactory {
     public static class ProductBFactory implements ProductFactory {
         @Override
         public Product createParser() {
-            return new ProductB();
+            return new ProductB();//
         }
     }
 
