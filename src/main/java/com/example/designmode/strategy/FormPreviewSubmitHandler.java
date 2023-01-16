@@ -17,10 +17,12 @@ public class FormPreviewSubmitHandler implements FormSubmitHandler<Serializable>
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
     @Override
-    public String getSubmitType() { return "preview"; }
+    public String getSubmitType() {
+        return "preview";
+    }
 
     @Override
-    public ResultVO<String> handleSubmit(FormSubmitRequest request) {
+    public ResultVO<String, Serializable> handleSubmit(FormSubmitRequest request) {
         logger.debug("预览模式提交：userId={}, formInput={}", request.getUserId(), request.getFormInput());
         return RV.success("预览模式提交数据成功！");
     }

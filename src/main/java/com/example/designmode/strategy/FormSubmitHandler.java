@@ -23,5 +23,5 @@ public interface FormSubmitHandler<R extends Serializable> {
      * @param request 请求
      * @return 响应，left 为返回给前端的提示信息，right 为业务值
      */
-    ResultVO<String> handleSubmit(FormSubmitRequest request);
+    ResultVO<String, R> handleSubmit(FormSubmitRequest request);
 }

@@ -9,7 +9,7 @@ import java.io.Serializable;
  * @Date 2018Äê06ÔÂ20ÈÕ 14:04
  * @Version 1.0.0
  */
-public class ResultVO<T> implements Serializable {
+public class ResultVO<T,R> implements Serializable {
     private static final long serialVersionUID = -6027997976969510028L;
 
     private final String FAIL = "0";
