@@ -2,7 +2,7 @@ package com.example.datastructure.leetcode_algorithm;
 
 
 /**
-Write a function to find the longest common prefix datastructure.string amongst an datastructure.array of strings.
+Write a function to find the longest Common prefix datastructure.string amongst an datastructure.array of strings.
 */
 
 public class q014_LoggestCommonPrefix {
@@ -14,7 +14,7 @@ public class q014_LoggestCommonPrefix {
     }
 
     /**
-     * 解法1(个人解法)
+     * 锟解法1(锟斤拷锟剿解法)
      * @param strs
      * @return
      */
@@ -36,7 +36,7 @@ public class q014_LoggestCommonPrefix {
     }
 
     /**
-     * 解法2
+     * 锟解法2
      *
      * @param strs
      * @return
