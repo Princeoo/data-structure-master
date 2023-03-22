@@ -9,11 +9,11 @@ public class test {
 
     public static void main(String[] args) {
 
-        ConcreteSubject subject = new ConcreteSubject();
-        // 这里假设是添加好友
+        Subject subject = new ConcreteSubject();
+        // 添加两个订阅者
         FriendOneObserver oneObserver = new FriendOneObserver();
         subject.attach(oneObserver);
-        FriendOneObserver twoObserver = new FriendOneObserver();
+        FriendTwoObserver twoObserver = new FriendTwoObserver();
         subject.attach(twoObserver);
 
         // 发送朋友圈动态
