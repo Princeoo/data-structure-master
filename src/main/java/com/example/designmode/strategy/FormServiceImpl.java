@@ -19,6 +19,13 @@ public class FormServiceImpl implements FormService {
     @Autowired
     private FormSubmitHandlerFactory submitHandlerFactory;
 
+    /**
+     * 策略模式和工厂模式其实一样，只要把submitHandler.handleSubmit(request);删除 直接返回submitHandler，就是工厂模式了
+     * 策略模式属于行为型模式，而工厂模式属于创建型模式
+     * 侧重点不一样，工厂模式主要是返回的接口实现类的实例化对象（关注对象的创建），而策略模式是在实例化策略模式的时候已经创建好（关注对象的封装）。
+     * @param request
+     * @return
+     */
     @Override
     public ResultVO<String, Serializable> submitForm(FormSubmitRequest request) {
         String submitType = request.getSubmitType();

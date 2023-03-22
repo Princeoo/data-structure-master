@@ -11,7 +11,7 @@ public class Factory {
         if (type.equals(1)) {
             return new EasyExport();
         } else if (type.equals(2)) {
-            return new EasyExport();
+            return new DifficultyExport();
         }   else{
             throw new RuntimeException("Message type:" + type + " not support");
         }

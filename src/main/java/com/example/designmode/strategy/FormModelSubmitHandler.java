@@ -21,12 +21,12 @@ public class FormModelSubmitHandler implements FormSubmitHandler<Long> {
 
     @Override
     public ResultVO<String, Long> handleSubmit(FormSubmitRequest request) {
-        logger.debug("模型提交：userId={}, formInput={}", request.getUserId(), request.getFormInput());
+        logger.debug("模型模式提交：userId={}, formInput={}", request.getUserId(), request.getFormInput());
 
         // 模型创建成功后获得模型的 id
         Long modelId = createModel(request);
 
-        return RV.success("模型提交成功！" + modelId);
+        return RV.success("模型模式提交成功！" + modelId);
     }
 
     private Long createModel(FormSubmitRequest request) {
