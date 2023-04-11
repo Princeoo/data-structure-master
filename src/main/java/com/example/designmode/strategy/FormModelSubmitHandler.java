@@ -21,16 +21,16 @@ public class FormModelSubmitHandler implements FormSubmitHandler<Long> {
 
     @Override
     public ResultVO<String, Long> handleSubmit(FormSubmitRequest request) {
-        logger.debug("Ä£ĞÍÄ£Ê½Ìá½»£ºuserId={}, formInput={}", request.getUserId(), request.getFormInput());
+        logger.debug("æ¨¡å‹æ¨¡å¼æäº¤ï¼šuserId={}, formInput={}", request.getUserId(), request.getFormInput());
 
-        // Ä£ĞÍ´´½¨³É¹¦ºó»ñµÃÄ£ĞÍµÄ id
+        // æ¨¡å‹åˆ›å»ºæˆåŠŸåè·å¾—æ¨¡å‹çš„ id
         Long modelId = createModel(request);
 
-        return RV.success("Ä£ĞÍÄ£Ê½Ìá½»³É¹¦£¡" + modelId);
+        return RV.success("æ¨¡å‹æ¨¡å¼æäº¤æˆåŠŸï¼" + modelId);
     }
 
     private Long createModel(FormSubmitRequest request) {
-        // ´´½¨Ä£ĞÍµÄÂß¼­
+        // åˆ›å»ºæ¨¡å‹çš„é€»è¾‘
         return 123L;
     }
 }

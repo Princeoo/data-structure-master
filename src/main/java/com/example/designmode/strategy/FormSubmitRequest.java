@@ -3,26 +3,26 @@ package com.example.designmode.strategy;
 import java.util.Map;
 
 /**
- * ±íµ¥Ìá½»µÄÇëÇó
+ * è¡¨å•æäº¤çš„è¯·æ±‚
  */
 public class FormSubmitRequest {
 
     /**
-     * Ìá½»ÀàĞÍ
+     * æäº¤ç±»å‹
      */
     private String submitType;
 
     /**
-     * ÓÃ»§ id
+     * ç”¨æˆ· id
      */
     private Long userId;
 
     /**
-     * ±íµ¥Ìá½»µÄÖµ
+     * è¡¨å•æäº¤çš„å€¼
      */
     private Map<String, Object> formInput;
 
-    // ÆäËûÊôĞÔ
+    // å…¶ä»–å±æ€§
 
 
     public String getSubmitType() {
